@@ -1,8 +1,8 @@
 package Tests;
 
-import com.uptc.prgm2.workingInClass.models.Botton;
-import com.uptc.prgm2.workingInClass.models.CirculeFigure;
-import com.uptc.prgm2.workingInClass.models.Posicion;
+import com.uptc.prgm2.workingInClass.model.Botton;
+import com.uptc.prgm2.workingInClass.model.CirculeFigure;
+import com.uptc.prgm2.workingInClass.model.Posicion;
 
 public class TestsCircleFigure {
 

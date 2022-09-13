@@ -1,4 +1,4 @@
-package com.uptc.prgm2.workingInClass.models;
+package com.uptc.prgm2.workingInClass.model;
 
 /**
  * @author Diego A

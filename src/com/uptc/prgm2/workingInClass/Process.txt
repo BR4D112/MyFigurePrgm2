@@ -1,0 +1,4 @@
+proceso de creacion de este programa
+Un area para graficar distintas figuras geometrica
+el area es un espacio
+el area de trabajo debe heredar 
