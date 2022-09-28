@@ -9,7 +9,10 @@ import java.util.ArrayList;
 import javax.swing.JFrame;
 
 public class JFrameArea extends JFrame {
-//	public static final Image ICONAPP = Toolkit.getDefaultToolkit().getImage("C://");
+
+	private static final long serialVersionUID = 1L;
+	// public static final Image ICONAPP =
+	// Toolkit.getDefaultToolkit().getImage("C://");
 	private Cirlce head;
 	private Cirlce body;
 	private Cirlce eye;
@@ -20,7 +23,6 @@ public class JFrameArea extends JFrame {
 	private Poligon[] hand;
 
 	public JFrameArea() {
-		super();
 		this.head = new Cirlce(75, Color.black, Color.red, new Point(725, 165));
 	}
 
@@ -34,7 +36,6 @@ public class JFrameArea extends JFrame {
 		this.setLegs();
 		this.setTrianglesHead();
 		this.setHand();
-
 	}
 
 	/**
@@ -45,12 +46,12 @@ public class JFrameArea extends JFrame {
 	 */
 	private void init(int widthIn, int heightIn) {
 		this.getContentPane().setBackground(Color.white);
-//		this.setLocation(600, 200);
 		this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+//		this.setLocation(600, 200);
 //		this.setSize(widthIn, heightIn);
+//		this.setIconImage(Toolkit.getDefaultToolkit().createImage("C://"));
 		this.setTitle(Messages.getFullNameApp());
 		this.setResizable(false);
-//		this.setIconImage(Toolkit.getDefaultToolkit().createImage("C://"));
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		System.out.println(this.getGraphics());
@@ -98,15 +99,7 @@ public class JFrameArea extends JFrame {
 				new Poligon(new Point(530, 450), Color.black).add(new Point(650, 400)) };
 
 	}
-	public Graphics printOvals(int x, int y, int h, int w, Graphics g) {
-		for (int i = 0; i < 5; i++) {
-			   g.setColor((i%2==0?Color.BLUE:Color.RED));
-			   g.drawOval(x+w/(i+1)*2, y+h/(i+1)*2, w/(i+1), h/(i+1));
-			   g.setColor((i%2==0?Color.BLUE:Color.RED));
-			   g.fillOval(x+w/(i+1)*2, y+h/(i+1)*2, w/(i+1), h/(i+1));
-			}
-		return g;
-	}
+
 	@Override
 	public void paint(Graphics graphics) {
 		for (Triangle triangle : triangleHead) {
@@ -123,10 +116,8 @@ public class JFrameArea extends JFrame {
 			triangle.showTriangle(graphics);
 		}
 		for (Poligon poligon : hand) {
-
 			poligon.show(graphics);
 		}
-		this.printOvals(10, 50, 50, 50, this.getGraphics());
 	}
 
 }
