@@ -6,9 +6,10 @@ public class TestJFrameArea {
 	
 	public static void main(String[] args) {
 		//JFrameArea area = new JFrameArea(500,500);
-		int width = 500;
-		int heigh = 500;
+		int width = 200;
+		int heigh = 200;
 //		System.out.println(java.awt.Toolkit.getDefaultToolkit().getScreenResolution());
+//		new JFrameArea().init(width, heigh);
 		new JFrameArea(width, heigh);
 	}
 
